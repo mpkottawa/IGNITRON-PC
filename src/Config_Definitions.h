@@ -8,8 +8,8 @@
  * 
  *    \\ Ignitron, preset tools build v1 //
  *        \\ board v3, small screen //
- *
  *          \\ amp mode toggle //
+ *            \\ srl mon raw //
  */
 
 #ifndef CONFIG_DEFINITIONS_H_
@@ -111,8 +111,8 @@ enum BatteryChargingStatus {
 // 1.3" OLED 128x64 displays commonly uses an SH1106 driver.
 // Choose driver below, only one can be defined!
 
-// #define OLED_DRIVER_SSD1306
-#define OLED_DRIVER_SH1106
+#define OLED_DRIVER_SSD1306
+// #define OLED_DRIVER_SH1106
 // #define OLED_DRIVER_SH1107
 
 // Optional setting for enabling Blink mode when in Manual/FX mode.

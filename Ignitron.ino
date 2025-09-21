@@ -57,9 +57,11 @@ void setup() {
     // spark_dc = new SparkDataControl();
     spark_bh.setDataControl(&spark_dc);
     operationMode = spark_bh.checkBootOperationMode();
-    pinMode(AMP_MODE_SWITCH_PIN, INPUT_PULLUP);             // toggle uses internal pull-up
-    int _ampToggleState = digitalRead(AMP_MODE_SWITCH_PIN);  // LOW when switch is closed to GND
-    if (_ampToggleState == LOW) { operationMode = SPARK_MODE_AMP; }  // force Amp Mode
+    pinMode(AMP_MODE_SWITCH_PIN, INPUT);  // external 10k pull-up to 3.3V, switch to GND
+int _ampToggleState = digitalRead(AMP_MODE_SWITCH_PIN);  // HIGH=open, LOW=closed
+if (_ampToggleState == LOW) {
+    operationMode = SPARK_MODE_AMP;   // force Amp Mode
+}
 
     // Setting operation mode before initializing
     operationMode = spark_dc.init(operationMode);

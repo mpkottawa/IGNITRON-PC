@@ -227,9 +227,21 @@ bool SparkBTControl::writeBLE(ByteVector &cmd, bool withDelay, bool response) {
                     int cmd_size = cmd.size();
                     int cut_point = min(cmd_size, bleMaxMsgSize_);
                     if (cut_point > 0) {
+						//send_cmd.assign(cmd.begin(), cmd.begin() + cut_point);
+                        //cmd.assign(cmd.begin() + cut_point, cmd.end());                                                                //mk
+                        //return_value = characteristic->writeValue(send_cmd.data(), send_cmd.size(), response);
                         send_cmd.assign(cmd.begin(), cmd.begin() + cut_point);
                         cmd.assign(cmd.begin() + cut_point, cmd.end());
+
+                        // 🔧 DEBUG HEX DUMP
+                        Serial.print("TX: ");
+                        for (int i = 0; i < cut_point; i++) {
+                            Serial.printf("%02X ", send_cmd[i]);
+                        }
+                        Serial.println();
+
                         return_value = characteristic->writeValue(send_cmd.data(), send_cmd.size(), response);
+
                     }
                 }
                 if (return_value) {
