@@ -1,0 +1,50 @@
+-- Bank 1
+OrangeAD30Arpeggio.json
+AcDc.json
+Oasis.json
+IronMaiden.json
+-- Bank 2
+SunshineOfMyLove.json
+HideAndSeek.json
+CrazyTrain.json
+SultansOfSwing2.json
+-- Bank 3
+NothingElseMatters.json
+IronHammer.json
+NothingElseMattersAcous.json
+SultansOfSwingKnopfler.json
+-- Bank 4
+DualTrain.json
+AintTalkinBoutLoveLARSON.json
+TremontiAlternative.json
+RockDistortion.json
+-- Bank 5
+LynyrdSkynyrd.json
+ModernStone.json
+EnglFireball.json
+SantanaBlackMagicWoman.json
+-- Bank 6
+CleanForBallads.json
+SlashDontCry.json
+TornadoOfSouls.json
+FuzzyJam.json
+-- Bank 7
+WoodenBridge.json
+Hendrix.json
+BohemianRhapsody.json
+BritishAccent.json
+-- Bank 8
+RageNowInTheFire.json
+SlashV2.json
+ModernVintageClean.json
+StoneBreaker.json
+-- Bank 9
+CleanRB5001.json
+VintageCreamyLarson.json
+NovemberRainSolo.json
+12stracoustrummingCN1.json
+-- Bank 10
+ParadiseCity.json
+Wizo.json
+CountryRoad.json
+EnterSandman.json
